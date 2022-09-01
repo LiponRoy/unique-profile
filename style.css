@@ -159,17 +159,15 @@ height: auto;
 .body-content{
     background-color: var(--color-off-white);
     margin: 36px;
-
     display: grid;
     grid-template-rows: 3fr 6fr;
 }
 /* ==========body-content TopSide=========== */
 .body-content .topside{
     display: grid;
-        grid-template-columns: 2fr 6fr;
-
-  
+    grid-template-columns: 2fr 6fr;
 }
+
 .body-content .topside .profile-info{
   background-color: var(--color-white);
   margin-right: 72px;
@@ -265,7 +263,79 @@ display: flex;
     border-radius: 8px;
 }
 /* ==========body-content TopSide End=========== */
-.body-content .bottomside{
-    background-color: rgb(5, 94, 97);
 
+/* ==========body-content BottomSide=========== */
+.body-content .bottomSide{
+    background-color: var(--color-white);
+    color: var(--color-muted-text);
+    margin-top: 26px;
+
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+
+}
+.body-content .bottomSide .topPart{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 2px solid var(--color-light);
+    padding-bottom: 4px;
+}
+.body-content .bottomSide .topPart span {
+    margin: 0px 12px;
+    color: var(--color-light);
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+.body-content .bottomSide .topPart span:hover {
+    color: var(--color-orange);
+    border-bottom: 4px solid var(--color-orange);
+    cursor: pointer;
+   
+  
+}
+.body-content .bottomSide .bottomPart{
+display: flex;
+    justify-content: center;
+    flex-direction: column;
+  padding:0px 360px;
+
+}
+
+.body-content .bottomSide .bottomPart .item{
+    color: black;
+    display: flex;
+    align-items: center;
+   margin: 12px;
+    
+}
+.body-content .bottomSide .bottomPart .item span {
+    color: black;
+    margin-left: 32px;
+    font-size: 18px;
+
+
+}
+.body-content .bottomSide .bottomPart .item .toggle-icon{
+width: 60px;
+height: 30px;
+background-color: var(--color-orange);
+border-radius: 50px;
+position: relative;
+    
+}
+.body-content .bottomSide .bottomPart .item .toggle-icon .circle{
+    background-color: var(--color-off-white);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom:0;
+    margin:auto;
+
+    
 }
