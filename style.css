@@ -109,7 +109,6 @@
 /* ==========End of navbar=========== */
 .main-container {
 	height: 90vh;
-	/* background-color: blueviolet; */
 	color: white;
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -153,7 +152,7 @@ cursor: pointer;
 }
 .left-side{
 height: auto;
-    /* background-color: rgb(165, 102, 79); */
+    
 }
 
 /* ==========Side bar End=========== */
@@ -164,6 +163,7 @@ height: auto;
     display: grid;
     grid-template-rows: 3fr 6fr;
 }
+/* ==========body-content TopSide=========== */
 .body-content .topside{
     display: grid;
         grid-template-columns: 2fr 6fr;
@@ -188,7 +188,7 @@ height: auto;
 
 .body-content .topside .credits{
 background-color: var(--color-white);
-color: var(--color-black);
+color: var(--color-muted-text);
 
 display: grid;
     grid-template-columns: 4fr 4fr 4fr;
@@ -196,38 +196,76 @@ display: grid;
   
 }
 .card1{
-  
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   border: 1px solid rgb(153, 153, 153);
-border-radius: 8px;
-  margin: 40px;
+  padding-left: 22px;
+  border-radius: 8px;
+  margin: 50px;  
+  position: relative;
+}
+.card1 :first-child{
+    margin-bottom: 22px;
+}
+.card2 :first-child{
+    margin-bottom: 22px;
+}
+.card3 :first-child{
+    margin-bottom: 22px;
 }
 .card2{
-display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     border: 1px solid rgb(153, 153, 153);
+    padding-left: 22px;
     border-radius: 8px;
-    margin: 40px;
+    margin: 50px;
+    position: relative;
 }
 .card3{
 display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     border: 1px solid rgb(153, 153, 153);
+    padding-left: 22px;
     border-radius: 8px;
-    margin: 40px;
+    margin: 50px;
+    position: relative;
+}
+.card-headline{
+        position: absolute;
+        top: -35px;
+        left: 14px;
+        font-size: 22px;
+        font-weight: 500;
+}
+.card-icon{
+    position: absolute;
+    top: 10px;
+    right: 14px;
 }
 .card1:hover{
     border: 3px solid rgb(238, 147, 0);
+    color: var(--color-black);
     border-radius: 8px;
 }
+.card2:hover{
+    border: 3px solid rgb(238, 147, 0);
+    color: var(--color-black);
+    border-radius: 8px;
+}
+.card3:hover {
+    border: 3px solid rgb(238, 147, 0);
+    color: var(--color-black);
+    border-radius: 8px;
+}
+/* ==========body-content TopSide End=========== */
 .body-content .bottomside{
-    background-color: cadetblue;
+    background-color: rgb(5, 94, 97);
 
 }
