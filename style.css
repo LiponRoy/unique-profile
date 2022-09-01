@@ -115,11 +115,119 @@
     grid-template-columns: 1fr 6fr;
 
 }
+/* ==========Side bar start=========== */
 .sidebar{
    height: auto;
 background-color: var(--color-black);
+display: flex;
+justify-content: center;
+align-items: start;
+
+}
+.sidebar .sidebar-content{
+    margin-top: 50px;
+
+
+}
+.sidebar .sidebar-content .sidebar-item {
+   display: flex;
+   align-items: center;
+   padding: 20px 12px;
+
+}
+
+.sidebar .sidebar-content .sidebar-item :first-child {
+margin: 0px 15px;
+
+}
+.sidebar .sidebar-content .sidebar-item :nth-child(2) {
+    margin: 0px 8px;
+    font-size: 18px;
+    color: var(--color-muted-text);
+
+
+}
+.sidebar .sidebar-content .sidebar-item :nth-child(2):hover {
+cursor: pointer;
+    color: var(--color-off-white);
 }
 .left-side{
 height: auto;
     /* background-color: rgb(165, 102, 79); */
+}
+
+/* ==========Side bar End=========== */
+.body-content{
+    background-color: var(--color-off-white);
+    margin: 36px;
+
+    display: grid;
+    grid-template-rows: 3fr 6fr;
+}
+.body-content .topside{
+    display: grid;
+        grid-template-columns: 2fr 6fr;
+
+  
+}
+.body-content .topside .profile-info{
+  background-color: var(--color-white);
+  margin-right: 72px;
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  color: var(--color-light);
+}
+.body-content .topside .profile-info :nth-child(2) {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+
+.body-content .topside .credits{
+background-color: var(--color-white);
+color: var(--color-black);
+
+display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  
+  
+}
+.card1{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(153, 153, 153);
+border-radius: 8px;
+  margin: 40px;
+}
+.card2{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 8px;
+    margin: 40px;
+}
+.card3{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 8px;
+    margin: 40px;
+}
+.card1:hover{
+    border: 3px solid rgb(238, 147, 0);
+    border-radius: 8px;
+}
+.body-content .bottomside{
+    background-color: cadetblue;
+
 }
