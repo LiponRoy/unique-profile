@@ -22,34 +22,91 @@
     box-sizing: border-box;
 }
 
-
-
 .top-container {
 	height: 100vh;
-	/* width: 100vw; */
 	background-color: var(--color-off-white);
 	color: white;
 	margin: 0px 20px;
-
-	/* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
+
+/* ========== navbar=========== */
 .top-navbar {
 	width: auto;
-	height: 10vh;
-	padding: 0px 42px;
+	height: 90px;
+	padding: 0px 30px;
 	background-color: var(--color-black);
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.logo {
+.logo { 
+    padding:8px;
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
 }
-.left-content {
+.logo .logo-text{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+}
+.logo .logo-text :first-child {
+     color: white;
+     font-weight: 700;
+     font-size: 1.2rem;
+}
+.logo .logo-text :last-child {
+    color: rgb(185, 185, 185);
+    font-weight: 300;
+        font-size: .8rem;
+}
+.right-content {
 	display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+.right-content :first-child{
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.right-content :nth-child(2){
+    color: var(--color-orange);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0px 12px;
+
+}
+.right-content .profile-dropdown{
+    width: 200px;
+    height: 60px;
+  background-color: var(--color-off-white);
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 22px;
+            cursor: pointer;
+}
+.right-content .profile-dropdown .content {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 5px 12px; */
+
+}
+.right-content .profile-dropdown .content span{
+
+    font-size: 20px;
+    font-weight: 500;
+
+}
+/* ==========End of navbar=========== */
 .main-container {
 	height: 90vh;
 	/* background-color: blueviolet; */
