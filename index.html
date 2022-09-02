@@ -20,11 +20,25 @@
 				<div class="right-content">
 					<span>Balance:</span>
 					<span>$125</span>
-					<div class="profile-dropdown">
+					<div class="profile-dropdown" id="dropdownBtn">
 						<div class="content">
 							<img src="./images/profile-photo.png" alt="no image" width="40px" />
 							<span>Alexa jui</span>
 							<img src="./images/down-arrow.png" alt="no image" width="12px" />
+						</div>
+						<div class="nav-dropdownMenu" id="dropdownMenu">
+							<div class="dropdownMenu-item">
+								<p>My Profile</p>
+							</div>
+							<div class="dropdownMenu-item">
+								<p>Add Fund</p>
+							</div>
+							<div class="dropdownMenu-item">
+								<p>API Documentation</p>
+							</div>
+							<div class="dropdownMenu-item">
+								<p>Log Out</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -118,11 +132,45 @@
 								</div>
 								<span>Notify me when list verification complete</span>
 							</div>
+							<div class="bottomBorder"></div>
+							<div class="item">
+								<div class="toggle-icon">
+									<div class="circle"></div>
+								</div>
+								<span>Notify me when list verification complete</span>
+							</div>
+
+							<div class="inputForm">
+								<div>
+									<!-- //......... -->
+									<div class="container">
+										<form action="action_page.php">
+											<label for="fname" style="color: black">Send Email To</label>
+
+											<input type="text" id="fname" name="firstname" placeholder="lipon@gmail.com" />
+										</form>
+									</div>
+									<!-- //....... -->
+								</div>
+								<div>
+									<!-- //......... -->
+									<div class="container">
+										<form action="action_page.php">
+											<label for="fname" style="color: black">When Cridits are less than</label>
+											<input type="text" id="fname" name="firstname" placeholder="50" />
+										</form>
+									</div>
+									<!-- //....... -->
+								</div>
+							</div>
+							<div class="bottomBorder"></div>
+							<button class="saveBtn">Save Change</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- <span>Bangladeshi public</span> -->
 		</div>
+		<script src="./index.js"></script>
 	</body>
 </html>
