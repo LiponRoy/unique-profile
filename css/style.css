@@ -107,7 +107,7 @@
     border:1px solid var(--color-light);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 12px ;
-    bottom: -172px;
+    bottom: -222px;
     z-index: 100;
     display: none;
 }
@@ -167,7 +167,7 @@ margin: 0px 15px;
 .sidebar .sidebar-content .sidebar-item :nth-child(2) {
     margin: 0px 8px;
     font-size: 18px;
-    color: var(--color-muted-text);
+    color: var(--color-light);
 
 
 }
@@ -226,7 +226,7 @@ display: grid;
   border: 1px solid rgb(153, 153, 153);
   padding-left: 22px;
   border-radius: 8px;
-  margin: 50px;  
+    margin: 40px 20px;
   position: relative;
 }
 .card1 :first-child{
@@ -246,7 +246,7 @@ display: grid;
     border: 1px solid rgb(153, 153, 153);
     padding-left: 22px;
     border-radius: 8px;
-    margin: 50px;
+    margin: 40px 20px;
     position: relative;
 }
 .card3{
@@ -257,7 +257,7 @@ display: flex;
     border: 1px solid rgb(153, 153, 153);
     padding-left: 22px;
     border-radius: 8px;
-    margin: 50px;
+    margin: 40px 20px;
     position: relative;
 }
 .card-headline{
@@ -360,9 +360,28 @@ position: relative;
     left: 4px;
     top: 0;
     bottom:0;
-    margin:auto;
+    margin:auto; 
+}
+.body-content .bottomSide .bottomPart .item .toggle-icon-2 {
+    width: 60px;
+    height: 30px;
+    background-color: var(--color-off-white);
+    border: 2px solid var(--color-orange);
+    border-radius: 50px;
+    position: relative;
 
-    
+}
+
+.body-content .bottomSide .bottomPart .item .toggle-icon-2 .circle-2 {
+    background-color: var(--color-orange);
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 .bottomBorder{
     border: 1px solid var(--color-muted-text);
@@ -424,5 +443,6 @@ display: grid;
     color:var(--color-off-white);
     padding: 8px;
     margin-top: 12px;
-    border-radius: 12px;
+    border-radius: 6px;
+    cursor: pointer;
  }
